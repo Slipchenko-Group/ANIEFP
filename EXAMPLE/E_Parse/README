@@ -8,3 +8,14 @@ If you run the Parse_files nb without any changes:
 
 Following steps:
 - this dataframe (csv file) contains all the data we will use for training!
+
+
+Important information: 
+- The meanings of each columns are follows
+- System energy = the total qm energy from the qm/efp file. This is the energy of the qm region in the presence of the efp region
+- Gas energy = the gas phase qm energy. so we run a gas phase qm calculation using qchem. So energy of the qm region without the efp region
+the difference between system energy and gas energy is the interaction energy but not quite
+- Efp energy = the energy of the individual efp fragments interacting with only each other. This is the energy withouht the qm region present
+- Interaction energy = System energy - gas energy, so this number is the total interactions; the qm region interacting with the efp fragments and also efp fragments interacting with each other
+- Corr energy =  Interaction energy - Efp energy, this is the true interaction between just the qm region and the efp region. So we take the total interaction and subtract out the efp-efp interactions
+Corr energy is the energy that we will train to!
