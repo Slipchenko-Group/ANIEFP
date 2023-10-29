@@ -1,0 +1,98 @@
+EFPMD ver. 1.7.2
+Copyright (c) 2012-2017 Ilya Kaliman
+
+LIBEFP ver. 1.7.2
+Copyright (c) 2012-2017 Ilya Kaliman
+
+Journal References:
+  - Kaliman and Slipchenko, JCC 2013.
+    DOI: http://dx.doi.org/10.1002/jcc.23375
+  - Kaliman and Slipchenko, JCC 2015.
+    DOI: http://dx.doi.org/10.1002/jcc.23772
+
+Project web site: https://github.com/libefp2/libefp/
+
+RUNNING 1 MPI PROCESSES WITH 20 OPENMP THREADS EACH
+WALL CLOCK TIME IS Mon Dec 28 17:03:23 2020
+
+SIMULATION SETTINGS
+
+run_type elpot
+coord points
+terms elec pol disp xr
+elec_damp screen
+disp_damp overlap
+pol_damp tt
+pol_driver iterative
+enable_ff false
+enable_multistep false
+ff_geometry ff.xyz
+ff_parameters /scratch/halstead/c/cviquezr/libefp-master/share/libefp/fraglib/params/amber99.prm
+single_params_file false
+efp_params_file params.efp
+enable_cutoff false
+swf_cutoff 10
+xr_cutoff 0
+max_steps 100
+multistep_steps 1
+fraglib_path .
+userlib_path .
+enable_pbc false
+periodic_box 30.0 30.0 30.0 90.0 90.0 90.0
+opt_tol 0.0001
+gtest_tol 1e-06
+ref_energy 0
+hess_central false
+num_step_dist 0.001
+num_step_angle 0.01
+ensemble nve
+time_step 1
+print_step 1
+velocitize false
+temperature 300
+pressure 1
+thermostat_tau 1000
+barostat_tau 10000
+ligand 0
+enable_pairwise false
+print_pbc false
+symmetry false
+symm_frag frag
+
+
+xr_cutoff is set to 10.000000 
+
+
+ELECTROSTATIC POTENTIAL JOB
+
+
+    GEOMETRY (ANGSTROMS)
+
+A01C                -0.058060    -0.012120    -0.001400
+A02H                -0.775116    -0.823921    -0.146005
+A03H                -0.390389     1.087080    -0.034819
+A04H                 0.464878    -0.100028     0.982576
+A05H                 0.758067    -0.140917    -0.785267
+A01O1                2.233640     1.391180     2.623600
+A02H2                1.693168     1.948168     3.186917
+A03H3                2.795428     2.016797     2.162439
+A01O1               -1.544560     2.705780    -0.202900
+A02H2               -1.954118     3.218052    -0.902550
+A03H3               -0.684622     2.481495    -0.563281
+A01O1               -0.866060    -1.923320     2.289100
+A02H2               -0.364343    -1.354150     1.702588
+A03H3               -1.773109    -1.792598     2.006533
+A01O1                1.604940    -1.704120    -2.658100
+A02H2                1.272586    -1.131126    -1.964638
+A03H3                2.410563    -1.268250    -2.942107
+A01O1                2.173040     1.591380     0.571300
+A02H2                2.954751     1.637295     0.017684
+A03H3                1.491427     1.282627    -0.028488
+A01O1                2.546540     0.135380    -1.260200
+A02H2                2.523662     0.516187    -0.380351
+A03H3                3.124639     0.726946    -1.745506
+A01O1               -2.235660    -2.229720     2.581900
+A02H2               -1.974288    -2.984471     3.112661
+A03H3               -3.120793    -2.456312     2.290580
+
+

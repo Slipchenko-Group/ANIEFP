@@ -1,0 +1,158 @@
+EFPMD ver. 1.7.2
+Copyright (c) 2012-2017 Ilya Kaliman
+
+LIBEFP ver. 1.7.2
+Copyright (c) 2012-2017 Ilya Kaliman
+
+Journal References:
+  - Kaliman and Slipchenko, JCC 2013.
+    DOI: http://dx.doi.org/10.1002/jcc.23375
+  - Kaliman and Slipchenko, JCC 2015.
+    DOI: http://dx.doi.org/10.1002/jcc.23772
+
+Project web site: https://github.com/libefp2/libefp/
+
+RUNNING 1 MPI PROCESSES WITH 20 OPENMP THREADS EACH
+WALL CLOCK TIME IS Mon Dec 28 17:03:23 2020
+
+SIMULATION SETTINGS
+
+run_type elpot
+coord points
+terms elec pol disp xr
+elec_damp screen
+disp_damp overlap
+pol_damp tt
+pol_driver iterative
+enable_ff false
+enable_multistep false
+ff_geometry ff.xyz
+ff_parameters /scratch/halstead/c/cviquezr/libefp-master/share/libefp/fraglib/params/amber99.prm
+single_params_file false
+efp_params_file params.efp
+enable_cutoff false
+swf_cutoff 10
+xr_cutoff 0
+max_steps 100
+multistep_steps 1
+fraglib_path .
+userlib_path .
+enable_pbc false
+periodic_box 30.0 30.0 30.0 90.0 90.0 90.0
+opt_tol 0.0001
+gtest_tol 1e-06
+ref_energy 0
+hess_central false
+num_step_dist 0.001
+num_step_angle 0.01
+ensemble nve
+time_step 1
+print_step 1
+velocitize false
+temperature 300
+pressure 1
+thermostat_tau 1000
+barostat_tau 10000
+ligand 0
+enable_pairwise false
+print_pbc false
+symmetry false
+symm_frag frag
+
+
+xr_cutoff is set to 10.000000 
+
+
+ELECTROSTATIC POTENTIAL JOB
+
+
+    GEOMETRY (ANGSTROMS)
+
+A01C                 0.017280    -0.012020     0.013000
+A02H                -0.652929    -0.742375    -0.275619
+A03H                -0.562603     0.917803    -0.158361
+A04H                 0.297544    -0.130384     1.043117
+A05H                 0.907104    -0.023209    -0.617229
+A01O1                2.257180     1.452480    -2.378200
+A02H2                2.319567     2.201331    -1.782380
+A03H3                2.609443     1.792262    -3.202900
+A01O1               -1.480220    -2.659620    -0.151700
+A02H2               -1.759710    -2.209804    -0.951213
+A03H3               -0.575506    -2.914210    -0.342351
+A01O1               -0.914520    -1.776920     2.549500
+A02H2               -0.144438    -1.495256     2.052197
+A03H3               -1.647322    -1.393126     2.064347
+A01O1                1.531580    -1.665120    -2.563200
+A02H2                1.412599    -1.103748    -1.794841
+A03H3                2.249962    -1.244322    -3.039149
+A01O1                2.206980     1.682980     0.582600
+A02H2                3.076985     1.547091     0.202737
+A03H3                1.626017     1.202820    -0.010359
+A01O1               -2.655020     0.015980    -1.255600
+A02H2               -2.802773     0.416609    -0.396917
+A03H3               -2.043311     0.619013    -1.682020
+A01O1               -2.331020    -2.385420     2.450300
+A02H2               -2.025382    -3.247096     2.739731
+A03H3               -3.129586    -2.584561     1.958053
+
+
+    ENERGY COMPONENTS (ATOMIC UNITS)
+
+          ELECTROSTATIC ENERGY    -0.2428529440
+           POLARIZATION ENERGY    -0.0297196833
+             DISPERSION ENERGY    -0.0916275473
+     EXCHANGE REPULSION ENERGY     0.6068940776
+          POINT CHARGES ENERGY     0.0000000000
+     CHARGE PENETRATION ENERGY     0.0000000000
+
+                  TOTAL ENERGY     0.2426939031
+
+
+COORDINATES IN ANGSTROMS, ELECTROSTATIC POTENTIAL IN ATOMIC UNITS
+     ATOM            X            Y            Z        ELPOT 
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 0
+    A01C   0.01728000  -0.01202000   0.01300000   0.03567434
+    A02H  -0.65292923  -0.74237493  -0.27561930  -0.00280880
+    A03H  -0.56260274   0.91780316  -0.15836138   0.04078906
+    A04H   0.29754417  -0.13038362   1.04311741   0.01762571
+    A05H   0.90710355  -0.02320873  -0.61722907   0.07595318
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 1
+    A01O1   2.25718000   1.45248000  -2.37820000   0.04817519
+    A02H2   2.31956737   2.20133101  -1.78238035   0.03326351
+    A03H3   2.60944288   1.79226238  -3.20289986   0.03411195
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 2
+    A01O1  -1.48022000  -2.65962000  -0.15170000  -0.01252506
+    A02H2  -1.75971045  -2.20980381  -0.95121332  -0.02689674
+    A03H3  -0.57550616  -2.91420988  -0.34235133  -0.01661032
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 3
+    A01O1  -0.91452000  -1.77692000   2.54950000  -0.11423947
+    A02H2  -0.14443773  -1.49525645   2.05219726  -0.05503931
+    A03H3  -1.64732242  -1.39312601   2.06434657  -0.23965645
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 4
+    A01O1   1.53158000  -1.66512000  -2.56320000  -0.00067734
+    A02H2   1.41259937  -1.10374775  -1.79484079  -0.00742671
+    A03H3   2.24996176  -1.24432200  -3.03914933  -0.00819305
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 5
+    A01O1   2.20698000   1.68298000   0.58260000   0.01096693
+    A02H2   3.07698534   1.54709066   0.20273704   0.01220976
+    A03H3   1.62601711   1.20282027  -0.01035853  -0.00103733
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 6
+    A01O1  -2.65502000   0.01598000  -1.25560000   0.02254842
+    A02H2  -2.80277267   0.41660908  -0.39691696   0.01412650
+    A03H3  -2.04331078   0.61901273  -1.68202047   0.01569964
+
+ELECTROSTATIC POTENTIAL ON FRAGMENT 7
+    A01O1  -2.33102000  -2.38542000   2.45030000   0.01662247
+    A02H2  -2.02538150  -3.24709616   2.73973112  -0.06409391
+    A03H3  -3.12958576  -2.58456060   1.95805330  -0.00394721
+
+ELECTROSTATIC POTENTIAL JOB COMPLETED SUCCESSFULLY
+WALL CLOCK TIME IS Mon Dec 28 17:03:23 2020
+TOTAL RUN TIME IS 0 SECONDS

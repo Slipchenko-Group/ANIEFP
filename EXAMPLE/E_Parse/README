@@ -1,0 +1,10 @@
+To start make sure you have the following files in the directory:
+- Parse_files.ipynb
+
+If you run the Parse_files nb without any changes:
+- you should get qmefp_libefp_631Gd.csv 
+  since I ended up using only two methane in water geometries, the df has 10 rows. 
+
+
+Following steps:
+- this dataframe (csv file) contains all the data we will use for training!

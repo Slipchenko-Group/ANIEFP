@@ -1,0 +1,22 @@
+$molecule
+   0 1
+   C                0.017280    -0.012020     0.013000
+   H               -0.652929    -0.742375    -0.275619
+   H               -0.562603     0.917803    -0.158361
+   H                0.297544    -0.130384     1.043117
+   H                0.907104    -0.023209    -0.617229
+$end
+
+$rem
+   METHOD               wB97X
+   BASIS                6-31G*
+   JOBTYPE              sp
+   EFP_COORD_XYZ        true
+   EFP_FRAGMENTS_ONLY   true
+   EFP_DISP_DAMP        1
+   EFP_QM_DISP          true
+   EFP_QM_EXREP         true
+   EFP_DISP_DAMP        2
+   SYM_IGNORE           true
+$end
+

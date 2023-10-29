@@ -1,0 +1,17 @@
+ $contrl units=angs local=boys runtyp=makefp
+ mult=1 icharg=0 icut=11 $end
+ $system timlim=99999   mwords=500 $end
+ $scf soscf=.f. dirscf=.t. diis=.t. CONV=1.0d-06  $end
+ $basis gbasis=n31 ngauss=6 npfunc=0 ndfunc=1 nffunc=0
+ diffs=.f. diffsp=.f. $end
+ $DAMP IFTTYP(1)=2,0 IFTFIX(1)=1,1 thrsh=500.0 $end
+ $MAKEFP  POL=.t. DISP=.t. CHTR=.f.  EXREP=.t. $end
+ $data
+ mol1_63
+ C1
+C 6 2.64 2.77 2.89
+H 1 1.97 2.04 2.59
+H 1 2.05 3.69 2.71
+H 1 2.91 2.65 3.92
+H 1 3.54 2.76 2.26
+ $end

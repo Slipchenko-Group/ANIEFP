@@ -1,0 +1,16 @@
+To start make sure you have the following files in the directory:
+- MakeMAKEFP.ipynb
+- gro files for which you want to run makefp, such as mol1_centered_solv_86.gro
+- water.efp
+
+If you run the MakeMAKEFP nb without any changes:
+- you should get mol1_86_s.inp and similar files for each of the gro files
+
+Following steps:
+- run these makefp jobs in the cluster (you can use makefp.sb to submit the jobs), this will give you the .log files
+- copy the .efp files here (these are written to the scratch)
+- run fix_name.py with python3 to replace $FRAGNAME with the correct fragment name for each file 
+
+
+using makefp.sb will not work for you, you need to create your own bash or slurm script to run the GAMESS job
+I just left it there in case someone doesnt know anything and wants to know how to run a GAMESS job

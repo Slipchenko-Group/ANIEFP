@@ -1,0 +1,21 @@
+To start make sure you have the following files in the directory:
+- smiles2gro.ipynb
+- chembl_nomore15_CHNO_diverse10K.smi
+- water.gro
+- md.sb
+- envs.sh
+
+md.sb and envs.sh are files that were used to run the jobs on our own clusters and will not work for everyone else
+run your calculations in your own way
+
+If you run the smiles2gro nb without any changes:
+- from STEP 1 you should get mol0.gro and mol1.gro
+  you will need to change the value of n_smiles to get the gro for all the molecules
+- from STEP 2 you should get mol0_centered.gro, mol1_centered.gro, mol0_centered_solv.gro and mol1_centered_solv.gro
+  make sure water.gro exists!
+- from STEP 3 you should get mol0_centered_solv.in and mol1_centered_solv.in and diverse_mols_systems.csv
+- from STEP 4 you should get mol0_centered_solv.out and mol1_centered_solv.out
+  you can use md.sb to submit the jobs
+  make sure to have envs.sh in the folder!
+  I only ran MD for mol1 so the first file is missing
+- from STEP 5 you should get 4 files with names like mol1_centered_solv_86.gro but 86 might be replace by different numbers

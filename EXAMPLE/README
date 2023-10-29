@@ -1,0 +1,6 @@
+This is my attempt at explaining how to use the scripts/notebooks I wrote to go from a gro file (or smi) to the csv we need for training.
+The folders are in alphabetical order, so start from A_smiles2gro, then B_MakeMAKEFP and so on.
+I recommend to start by creating your own version of the EXAMPLE folder with the same subdirectories.
+Then for each subdirectory read the README file and follow the instructions.
+The README file in each subdirectory will tell you which files you need before you begin and it will also tell you which files you should get at the end.
+Samples of the files are also included in each subdirectory for your reference, in addition to some extra files you might need along the way (such as water.efp).
