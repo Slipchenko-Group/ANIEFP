@@ -6,7 +6,7 @@ To start make sure you have the following files in the directory:
 - envs.sh
 
 md.sb and envs.sh are files that were used to run the jobs on our own clusters and will not work for everyone else
-run your calculations in your own way
+run your calculations in your own way, but i left the files in so if someone who doesnt know wants to see, they can see
 
 If you run the smiles2gro nb without any changes:
 - from STEP 1 you should get mol0.gro and mol1.gro
