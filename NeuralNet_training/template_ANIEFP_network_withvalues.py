@@ -7,7 +7,7 @@ import torch.utils.tensorboard
 import numpy as np
 import os
 
-species, cspecies, aevs_elecpots, energies, mol_names = make_data(label_col='qmefp_solv', subtractE = 0, csv_file='631Gd_ani1x_master')
+species, cspecies, aevs_elecpots, energies, mol_names = make_data(label_col='corr_energy', subtractE = 0, csv_file='dataset')
 
 device = energies.device
 np.random.seed(0)
@@ -40,7 +40,7 @@ early_stopping_learning_rate = 1.0E-5
 wdecay1 = 0.0001
 wdecay2 = 0.0001
 lr_f = 0.5
-name = "A1_dW_1A_SEP1_0BN0W_15"
+name = "template_ANIEFP_network_withvalues"
 aev_dim = 385
 set_0bias = 1
 add_0w = 0
