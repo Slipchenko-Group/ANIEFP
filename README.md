@@ -9,6 +9,6 @@ The programs needed are GROMACS, GAMESS, LibEFP, and QChem, Python(need rdkit an
 
 Here is where you can download LibEFP https://github.com/libefp2/libefp
 
-Credit goes to Claudia Viquez Rojas, who developed most of the code for the data generation and training for this interation
+Credit goes to Claudia Viquez Rojas, who developed most of the code for the data generation and training for this iteration
 
 Each folder will have a README that will explain what to do and the associated code will be commented
