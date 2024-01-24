@@ -10,7 +10,6 @@ If you run the MakeGasQM_and_EFP nb without any changes:
 - you should also get mol1_63_s_water_5_efp.in and similar files for each of the QMEFP input files
 
 Following steps:
-- run the qchem jobs on the cluster (you can use qchem.sb to submit the jobs)
-  make sure to have envs.sh in the folder
+- run the qchem jobs
   before running the jobs make sure you have a copy of the water.efp file in the directory (found in MakeMAKEFP folder)
 - copy the output files here (if you check them you will see not all of them converged)

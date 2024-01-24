@@ -1,13 +1,13 @@
 To start make sure you have the following files in the directory:
 - MakeLibEFP.ipynb
-- gro files for which you want to run makefp, such as mol1_centered_solv_86.gro
+- gro files for which you want to run LibEFP, such as mol1_centered_solv_86.gro
 
 If you run the MakeLibEFP nb without any changes:
 - you should get mol1_86_s_water_5.in and similar files for each of the gro files
 
 Following steps:
-- run the libefp jobs on the cluster 
-  you can use elpot.sb to submit the jobs, but replace '/scratch/halstead/c/cviquezr/libefp-master/efpmd/src/efpmd' with the correct path to your libefp
+- run the libefp jobs, you need an installation of libefp, ttps://github.com/libefp2/libefp you can find it there.
+  you can call the libefp job through efpmd found in the efpmd/src/efpmd directory, so .../efpmd/src/efpmd libefp.in > libefp.out, or something like that
   before running the jobs make sure you have the efp files in the same direcotry as the input files (created in MakeMAKEFP)
   you will also need the water.efp file (also found in the MakeMAKEFP folder)
 - copy the output files here (if you check them you will see not all of them converged)

@@ -1,12 +1,10 @@
 To start make sure you have the following files in the directory:
-- smiles2gro.ipynb
-- chembl_nomore15_CHNO_diverse10K.smi
-- water.gro
-- md.sb
-- envs.sh
+- smiles2gro.ipynb: the jupyter notebook that has all the steps with instructions and explanations
+- chembl_nomore15_CHNO_diverse10K.smi: the smiles file with 10,000 different molecules from FreeSolv, we will grab from this
+- water.gro: just a water GROMACS structure, we will be solvating with this
 
-md.sb and envs.sh are files that were used to run the jobs on our own clusters and will not work for everyone else
-run your calculations in your own way, but i left the files in so if someone who doesnt know wants to see, they can see
+you will also need rdkit installed in your python environment for the jupyter notebook
+install it here: https://www.rdkit.org/docs/Install.html
 
 If you run the smiles2gro nb without any changes:
 - from STEP 1 you should get mol0.gro and mol1.gro
@@ -14,8 +12,8 @@ If you run the smiles2gro nb without any changes:
 - from STEP 2 you should get mol0_centered.gro, mol1_centered.gro, mol0_centered_solv.gro and mol1_centered_solv.gro
   make sure water.gro exists!
 - from STEP 3 you should get mol0_centered_solv.in and mol1_centered_solv.in and diverse_mols_systems.csv
+ at this point you need to be able to run QChem in some way, the .in files are for Qchem jobs.
+ so run them in whatever way you need to, but then make sure the output files are in this directory
 - from STEP 4 you should get mol0_centered_solv.out and mol1_centered_solv.out
-  you can use md.sb to submit the jobs
-  make sure to have envs.sh in the folder!
   I only ran MD for mol1 so the first file is missing
 - from STEP 5 you should get 4 files with names like mol1_centered_solv_86.gro but 86 might be replace by different numbers
