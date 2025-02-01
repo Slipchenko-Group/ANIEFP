@@ -1,5 +1,5 @@
 # ANIEFP
-The files for the ANI/EFP project 
+The files for the ANI/EFP project DOI: https://doi.org/10.1021/acs.jctc.4c01052
 
 Will use this readme as a tutorial for how to generate a dataset and then train a network
 
